@@ -4,8 +4,6 @@ public class App {
         Personagem lucksky = new Arqueiro("Lucksky", 300, 50, 30, 15, 8, 1);
         Personagem marckinglord = new Mago("Marcking", 300, 50, 30, 15, 8, 1);
 
-        //teste de conexão
-
         lucksky.mostrarStatus();
         marckinglord.mostrarStatus();
 
