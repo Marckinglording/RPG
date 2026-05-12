@@ -1,8 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-        Personagem lucksky = new Arqueiro("Lucksky", 300, 50, 30, 10, 8, 1);
-        Personagem marckinglord = new Mago("Marcking", 300, 50, 30, 15, 5, 1);
+        Personagem lucksky = new Arqueiro("Lucksky", 300, 50, 30, 15, 8, 1);
+        Personagem marckinglord = new Mago("Marcking", 300, 50, 30, 15, 8, 1);
+        Personagem firefly = new Guerreiro("Firefly", 300, 50, 30, 15, 1)
 
         lucksky.mostrarStatus();
         marckinglord.mostrarStatus();
