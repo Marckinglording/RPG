@@ -4,8 +4,10 @@ public class Mago extends Personagem {
 
     Random aleatorio = new Random();
     private static final double reducaoDeVelocidadeAtaque = 0.8;
+    private static final double reducaoDeDefesa = 0.8;
+    private static final double reducaoDevida = 0.7;
     private static final double aumentoDeVelocidade = 1.1;
-    private static final double aumentoDeAtaque = 1.2;
+    private static final double aumentoDeAtaque = 1.4;
     private final int reducaoAtaqueMin = 20;
     private final int reducaoAtaqueMax = 40;
     private final int reducaoVelocidadeMin = 10;
@@ -20,7 +22,7 @@ public class Mago extends Personagem {
     
     public Mago(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, double mana, int nivel) {
 
-        super ( nome,  vida, (ataque * aumentoDeAtaque), defesa, (velocidade * aumentoDeVelocidade), (velocidadeDeAtaque * reducaoDeVelocidadeAtaque), mana, nivel);
+        super ( nome,  (vida * reducaoDevida), (ataque * aumentoDeAtaque), (defesa * reducaoDeDefesa), (velocidade * aumentoDeVelocidade), (velocidadeDeAtaque * reducaoDeVelocidadeAtaque), mana, nivel);
 
     }
 

@@ -5,6 +5,7 @@ public class Arqueiro extends Personagem {
     Random aleatorio = new Random();
     private static final double aumentoDeVelocidadeAtaque = 1.4;
     private static final double aumentoDeVelocidade = 1.2;
+    private static final double aumentoDeAtaque = 1.1;
     private final int multiplicadorEsquiva = 5;
     private final int esquivaBase = 20;
     private final int chanceEsquivaParcial = 3;
@@ -12,7 +13,7 @@ public class Arqueiro extends Personagem {
 
     public Arqueiro(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, double mana, int nivel) {
 
-        super ( nome,  vida, ataque, defesa, (velocidade * aumentoDeVelocidade), (velocidadeDeAtaque * aumentoDeVelocidadeAtaque), mana, nivel);
+        super ( nome,  vida, (ataque * aumentoDeAtaque), defesa, (velocidade * aumentoDeVelocidade), (velocidadeDeAtaque * aumentoDeVelocidadeAtaque), mana, nivel);
 
     }
 

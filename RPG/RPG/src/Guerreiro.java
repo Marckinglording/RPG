@@ -4,6 +4,7 @@ public class Guerreiro extends Personagem {
 
     Random aleatorio = new Random();
     private static final double aumentoDeDefesa = 1.1;
+    private static final double aumentoDeVida = 1.2;
     private final int intervaloAtaqueCritico = 3;
     private final int criticoMin = 10;
     private final int criticoMax = 30;
@@ -12,7 +13,7 @@ public class Guerreiro extends Personagem {
     
     public Guerreiro(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, double mana, int nivel) {
 
-        super ( nome,  vida, ataque, (defesa * aumentoDeDefesa), velocidade, velocidadeDeAtaque, mana, nivel);
+        super ( nome,  (vida * aumentoDeVida), ataque, (defesa * aumentoDeDefesa), velocidade, velocidadeDeAtaque, mana, nivel);
 
     }
 
