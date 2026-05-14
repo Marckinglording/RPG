@@ -120,6 +120,7 @@ public class Personagem {
         System.out.println("Defesa: " + this.defesa);
         System.out.println("Velocidade: " + this.velocidade);
         System.out.println("Velocidade de ataque: " + this.velocidadeDeAtaque);
+        System.out.println("Mana: " + this.mana);
         System.out.println("Nível: " + this.nivel);
 
     }
