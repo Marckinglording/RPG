@@ -10,6 +10,7 @@ public class Personagem {
     private double velocidadeDeAtaque;
     private double velocidadeDeAtaqueBase;
     private double tempoDeAtaque = 0;
+    private double mana;
     private int nivel;
 
     private int turnosVelocidadeReduzida = 0;
@@ -18,7 +19,7 @@ public class Personagem {
     private int turnosAtaqueReduzido = 0;
     private boolean efeitoAtaqueReduzidoAtivo = false;
 
-    public Personagem(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, int nivel) {
+    public Personagem(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, double mana, int nivel) {
 
         this.nome = nome;
         this.vida = vida;
@@ -29,6 +30,7 @@ public class Personagem {
         this.velocidadeDeMovimentoBase = velocidade;
         this.velocidadeDeAtaque = velocidadeDeAtaque;
         this.velocidadeDeAtaqueBase = velocidadeDeAtaque;
+        this.mana = mana;
         this.nivel = nivel;
 
     }
@@ -44,7 +46,7 @@ public class Personagem {
     }
 
     public void reduzirAtaque(double reducaoPercentualDeAtaque, int turnos) {
-        double ataqueAtual = (ataqueBase - (reducaoPercentualDeAtaque / 100)) ;
+        double ataqueAtual = (ataqueBase * (reducaoPercentualDeAtaque / 100)) ;
         this.ataque = ataqueAtual;
         turnosAtaqueReduzido = turnos;
         efeitoAtaqueReduzidoAtivo = true;
@@ -175,6 +177,14 @@ public class Personagem {
 
     public void setTempoDeAtaque(double novoTempoDeAtaque) {
         this.tempoDeAtaque = novoTempoDeAtaque;
+    }
+
+    public double getMana() {
+        return mana;
+    }
+
+    public void setMana(double novaMana) {
+        this.mana = novaMana;
     }
 
 }

@@ -1,11 +1,14 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-        Personagem lucksky = new Arqueiro("Lucksky", 300, 50, 30, 15, 8, 1);
-        Personagem marckinglord = new Mago("Marcking", 300, 50, 30, 15, 8, 1);
+        /*Personagem lucksky = new Arqueiro("Lucksky", 300, 50, 30, 15, 8, 0, 1);
+        Personagem marckinglord = new Mago("Marcking", 300, 50, 30, 15, 8, 0, 1);
 
         lucksky.mostrarStatus();
-        marckinglord.mostrarStatus();
+        marckinglord.mostrarStatus(); */
+
+        Personagem lucksky = FabricarPersonagem.criarPersonagem("Arqueiro");
+        Personagem marckinglord = FabricarPersonagem.criarPersonagem("Mago");
 
         int turno = 1;
 

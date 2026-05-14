@@ -10,9 +10,9 @@ public class Guerreiro extends Personagem {
     private final double reducaoDeDano = 0.9;
     int ataqueCritico = 0;
     
-    public Guerreiro(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, int nivel) {
+    public Guerreiro(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, double mana, int nivel) {
 
-        super ( nome,  vida, ataque, (defesa * aumentoDeDefesa), velocidade, velocidadeDeAtaque, nivel);
+        super ( nome,  vida, ataque, (defesa * aumentoDeDefesa), velocidade, velocidadeDeAtaque, mana, nivel);
 
     }
 

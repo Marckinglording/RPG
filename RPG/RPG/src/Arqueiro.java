@@ -10,9 +10,9 @@ public class Arqueiro extends Personagem {
     private final int chanceEsquivaParcial = 3;
     private final int maximaChanceDeEsquiva = 40; 
 
-    public Arqueiro(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, int nivel) {
+    public Arqueiro(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, double mana, int nivel) {
 
-        super ( nome,  vida, ataque, defesa, (velocidade * aumentoDeVelocidade), (velocidadeDeAtaque * aumentoDeVelocidadeAtaque), nivel);
+        super ( nome,  vida, ataque, defesa, (velocidade * aumentoDeVelocidade), (velocidadeDeAtaque * aumentoDeVelocidadeAtaque), mana, nivel);
 
     }
 
