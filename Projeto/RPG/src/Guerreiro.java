@@ -3,8 +3,8 @@ import java.util.Random;
 public class Guerreiro extends Personagem {
 
     Random aleatorio = new Random();
-    private static final double aumentoDeDefesa = 1.1;
     private static final double aumentoDeVida = 1.2;
+    private static final double aumentoDeDefesa = 1.1;
     private final int intervaloAtaqueCritico = 3;
     private final int criticoMin = 10;
     private final int criticoMax = 30;

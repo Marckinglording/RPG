@@ -7,10 +7,12 @@ public class App {
         Personagem lucksky = FabricarPersonagem.criarPersonagem("Arqueiro");
         Personagem marckinglord = FabricarPersonagem.criarPersonagem("Mago");
         Personagem linalord = FabricarPersonagem.criarPersonagem("Guerreiro");
+        Personagem skyfire = FabricarPersonagem.criarPersonagem("Assassino");
 
         lucksky.mostrarStatus();
         marckinglord.mostrarStatus();
         linalord.mostrarStatus();
+        skyfire.mostrarStatus();
 
         int turno = 1;
 

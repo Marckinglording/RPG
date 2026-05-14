@@ -81,6 +81,19 @@ public class FabricarPersonagem {
                             1
                         );
 
+                    case "Assassino":
+
+                        return new Assassino(
+                            tipo,
+                            vida,
+                            ataque,
+                            defesa,
+                            velocidadeMovimento,
+                            velocidadeAtaque,
+                            mana,
+                            1
+                        );
+
                 }
 
             }

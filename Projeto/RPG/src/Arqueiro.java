@@ -3,9 +3,9 @@ import java.util.Random;
 public class Arqueiro extends Personagem {
     
     Random aleatorio = new Random();
-    private static final double aumentoDeVelocidadeAtaque = 1.4;
-    private static final double aumentoDeVelocidade = 1.2;
     private static final double aumentoDeAtaque = 1.1;
+    private static final double aumentoDeVelocidade = 1.2;
+    private static final double aumentoDeVelocidadeAtaque = 1.4;
     private final int multiplicadorEsquiva = 5;
     private final int esquivaBase = 20;
     private final int chanceEsquivaParcial = 3;

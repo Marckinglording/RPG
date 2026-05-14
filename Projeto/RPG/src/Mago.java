@@ -4,8 +4,8 @@ public class Mago extends Personagem {
 
     Random aleatorio = new Random();
     private static final double reducaoDeVelocidadeAtaque = 0.8;
-    private static final double reducaoDeDefesa = 0.8;
     private static final double reducaoDevida = 0.7;
+    private static final double reducaoDeDefesa = 0.8;
     private static final double aumentoDeVelocidade = 1.1;
     private static final double aumentoDeAtaque = 1.4;
     private final int reducaoAtaqueMin = 20;
