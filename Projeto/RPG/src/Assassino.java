@@ -8,7 +8,7 @@ public class Assassino extends Personagem {
 
     public Assassino(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, double mana, int nivel) {
 
-        super ( nome,  (vida * reducaoDevida), (ataque * aumentoDeAtaque), (defesa * reducaoDeDefesa), (velocidade * aumentoDeVelocidade), (velocidadeDeAtaque * aumentoDeVelocidadeAtaque), mana, nivel);
+        super (nome,  (vida * reducaoDevida), (ataque * aumentoDeAtaque), (defesa * reducaoDeDefesa), (velocidade * aumentoDeVelocidade), (velocidadeDeAtaque * aumentoDeVelocidadeAtaque), mana, nivel);
 
     }
 

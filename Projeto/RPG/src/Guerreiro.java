@@ -13,7 +13,7 @@ public class Guerreiro extends Personagem {
     
     public Guerreiro(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, double mana, int nivel) {
 
-        super ( nome,  (vida * aumentoDeVida), ataque, (defesa * aumentoDeDefesa), velocidade, velocidadeDeAtaque, mana, nivel);
+        super (nome,  (vida * aumentoDeVida), ataque, (defesa * aumentoDeDefesa), velocidade, velocidadeDeAtaque, mana, nivel);
 
     }
 

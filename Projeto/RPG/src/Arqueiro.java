@@ -13,7 +13,7 @@ public class Arqueiro extends Personagem {
 
     public Arqueiro(String nome, double vida, double ataque, double defesa, double velocidade, double velocidadeDeAtaque, double mana, int nivel) {
 
-        super ( nome,  vida, (ataque * aumentoDeAtaque), defesa, (velocidade * aumentoDeVelocidade), (velocidadeDeAtaque * aumentoDeVelocidadeAtaque), mana, nivel);
+        super (nome,  vida, (ataque * aumentoDeAtaque), defesa, (velocidade * aumentoDeVelocidade), (velocidadeDeAtaque * aumentoDeVelocidadeAtaque), mana, nivel);
 
     }
 
