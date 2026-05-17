@@ -13,7 +13,7 @@ public class Conexao {
             
             Connection conn = DriverManager.getConnection(url, usuario, senha);
 
-            System.out.println("Conectado ao banco de dados com sucesso!");
+            //System.out.println("Conectado ao banco de dados com sucesso!");
 
             return conn;
 
